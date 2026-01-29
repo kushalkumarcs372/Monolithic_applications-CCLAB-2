@@ -8,7 +8,7 @@ def checkout_logic():
 
     # Uncomment this line initially for the crash screenshot task
    # 1 / 0
-
+    # Optimized version: commented out simple sum instead of inefficient loops
     # while fee > 0:
     #   total += 1
     #   fee -= 1
