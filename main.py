@@ -62,6 +62,7 @@ def events(request: Request, user: str):
     db = get_db()
     rows = db.execute("SELECT * FROM events").fetchall()
 
+    # Optimization: Commented out inefficient waste loop
     # waste = 0
     # for i in range(3000000):
     #     waste += i % 3
@@ -97,7 +98,7 @@ def my_events(request: Request, user: str):
         (user,)
     ).fetchall()
 
-
+    # Optimization: Commented out inefficient dummy loop
     # dummy = 0
     # for _ in range(1500000):
     #     dummy += 1
